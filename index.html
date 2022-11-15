@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <!--==============STYLE CSS============-->
+        <link  rel="stylesheet" href="style.css">
+        <!--==========TITLE=================--> 
+        <title> 🎲Dice Roll</title>
+    </head>
+<body>
+
+    <!--================================================================
+        👽👽👽👽👽👽👽 ANIMATION TEXT 👽👽👽👽👽👽👽👽👽
+    ==================================================================-->
+<div class="container">  
+<header>
+    <h1 class="ml14">
+        <span class="text-wrapper">
+          <span class="letters">Commencer votre partie...</span>
+          <span class="line"></span>
+        </span>
+      </h1>
+    </header>
+
+    <!--===========================AUDIO====🎧==========================-->
+    <audio controls src="video,song/Reiki Zen Meditation Music Relax your Mind and Body Soothing Music.mp3" type="audio/mp3"></audio>    
+
+
+    <!--===============================================================
+                              PLAYERS  __🏃
+    =================================================================-->
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Score</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Score</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+    <!--===============================================================
+                                BOX ICON (>___<)
+                                           >|<
+    =================================================================-->   
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>Nouveau Jeu</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Lancer</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Récupérer</button>
+         
+    <!--====================IMG DICE(+___+)===========================-->
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+
+<!--===========================BACKGROUND MP4 📽️========================-->
+        <video src="video,song/Lac - 91562.mp4" id="background-video"  autoplay loop muted></video>
+    </div>  
+        
+        
+<!--====================================SCRIPT ========================-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="Js/app.js"></script>
+    </body>
+</html>
+
